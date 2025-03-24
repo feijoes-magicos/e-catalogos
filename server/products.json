@@ -1,0 +1,1906 @@
+{
+  "products": [
+    {
+      "id": 60218,
+      "name": "Jaqueta Moda",
+      "reference": "12.09.0000",
+      "gender": "Feminino",
+      "category": "Inverno Feminino",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": null,
+      "deadline_id": null,
+      "type": null,
+      "skus": [
+        {
+          "id": 215321,
+          "size": "G",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        },
+        {
+          "id": 215322,
+          "size": "GG",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215320,
+          "size": "M",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215319,
+          "size": "P",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 89,
+      "colors": [],
+      "images": [
+        {
+          "id": 122972,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1740000563405.jpg"
+        },
+        {
+          "id": 122973,
+          "order": 2,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1740000592773.jpg"
+        }
+      ]
+    },
+    {
+      "id": 60219,
+      "name": "Jaqueta Colorida",
+      "reference": "72.09.0000",
+      "gender": "Feminino",
+      "category": "Inverno Feminino",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": null,
+      "deadline_id": null,
+      "type": null,
+      "skus": [
+        {
+          "id": 215325,
+          "size": "G",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        },
+        {
+          "id": 215326,
+          "size": "GG",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215324,
+          "size": "M",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215323,
+          "size": "P",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 109,
+      "colors": [],
+      "images": [
+        {
+          "id": 122966,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1740000223004.jpg"
+        },
+        {
+          "id": 122967,
+          "order": 2,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1740000248914.jpg"
+        },
+        {
+          "id": 122968,
+          "order": 3,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1740000291536.jpg"
+        }
+      ]
+    },
+    {
+      "id": 60220,
+      "name": "Jaqueta Estilosa",
+      "reference": "42.09.0000",
+      "gender": "Feminino",
+      "category": "Inverno Feminino",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": null,
+      "deadline_id": null,
+      "type": null,
+      "skus": [
+        {
+          "id": 215329,
+          "size": "G",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        },
+        {
+          "id": 215330,
+          "size": "GG",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215327,
+          "size": "M",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215328,
+          "size": "P",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 119,
+      "colors": [],
+      "images": [
+        {
+          "id": 122969,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1740000434398.jpg"
+        },
+        {
+          "id": 122970,
+          "order": 2,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1740000501728.jpg"
+        },
+        {
+          "id": 122971,
+          "order": 3,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1740000533814.jpg"
+        }
+      ]
+    },
+    {
+      "id": 60221,
+      "name": "Jaqueta Perfumada",
+      "reference": "22.09.0000",
+      "gender": "Feminino",
+      "category": "Inverno Feminino",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": null,
+      "deadline_id": null,
+      "type": null,
+      "skus": [
+        {
+          "id": 215334,
+          "size": "G",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        },
+        {
+          "id": 215333,
+          "size": "GG",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215332,
+          "size": "M",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215331,
+          "size": "P",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 69,
+      "colors": [],
+      "images": [
+        {
+          "id": 122974,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1740000635706.jpg"
+        },
+        {
+          "id": 122975,
+          "order": 2,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1740000661151.jpg"
+        }
+      ]
+    },
+    {
+      "id": 60222,
+      "name": "Jaqueta Aurora",
+      "reference": "20.09.0000",
+      "gender": "Feminino",
+      "category": "Inverno Feminino",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": null,
+      "deadline_id": null,
+      "type": null,
+      "skus": [
+        {
+          "id": 215337,
+          "size": "G",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        },
+        {
+          "id": 215338,
+          "size": "GG",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215335,
+          "size": "M",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215336,
+          "size": "P",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 69,
+      "colors": [],
+      "images": [
+        {
+          "id": 122962,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1739998149311.jpg"
+        },
+        {
+          "id": 122963,
+          "order": 2,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1739998195046.jpg"
+        },
+        {
+          "id": 122964,
+          "order": 3,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1739998258375.jpg"
+        }
+      ]
+    },
+    {
+      "id": 56813,
+      "name": "Jaqueta Ambar",
+      "reference": "100BMG71",
+      "gender": "Feminino",
+      "category": "Inverno Feminino",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": "Jaqueta marrom com capuz e cinto ajustável.",
+      "deadline_id": 229,
+      "type": "NACIONAL",
+      "skus": [
+        {
+          "id": 201020,
+          "size": "G",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201021,
+          "size": "GG",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201022,
+          "size": "M",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201023,
+          "size": "P",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 21,
+      "colors": [],
+      "images": [
+        {
+          "id": 113728,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738690123007.jpg"
+        },
+        {
+          "id": 113729,
+          "order": 2,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738694625277.jpg"
+        },
+        {
+          "id": 113730,
+          "order": 3,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738694694634.jpg"
+        },
+        {
+          "id": 113731,
+          "order": 4,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1724345520885.jpg"
+        }
+      ]
+    },
+    {
+      "id": 56816,
+      "name": "Jaqueta Azul",
+      "reference": "100BMG74",
+      "gender": "Feminino",
+      "category": "Inverno Feminino",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": "Jaqueta azul com capuz removível.",
+      "deadline_id": 229,
+      "type": "NACIONAL",
+      "skus": [
+        {
+          "id": 201034,
+          "size": "G",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201035,
+          "size": "GG",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201033,
+          "size": "M",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201032,
+          "size": "P",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 26,
+      "colors": [],
+      "images": [
+        {
+          "id": 113738,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738678625559.jpg"
+        },
+        {
+          "id": 113739,
+          "order": 2,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738678698725.jpg"
+        },
+        {
+          "id": 113740,
+          "order": 3,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738679956100.jpg"
+        }
+      ]
+    },
+    {
+      "id": 56818,
+      "name": "Jaqueta Cinza",
+      "reference": "100BMG76",
+      "gender": "Feminino",
+      "category": "Inverno Feminino",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": "Jaqueta cinza",
+      "deadline_id": 229,
+      "type": "NACIONAL",
+      "skus": [
+        {
+          "id": 201041,
+          "size": "G",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201043,
+          "size": "GG",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201042,
+          "size": "M",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201040,
+          "size": "P",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 28,
+      "colors": [],
+      "images": [
+        {
+          "id": 113741,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738679181839.jpg"
+        },
+        {
+          "id": 113742,
+          "order": 2,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738680012111.jpg"
+        },
+        {
+          "id": 113743,
+          "order": 3,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738680041003.jpg"
+        }
+      ]
+    },
+    {
+      "id": 56819,
+      "name": "Jaqueta Verde",
+      "reference": "100BMG77",
+      "gender": "Feminino",
+      "category": "Inverno Feminino",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": "Jaqueta verde",
+      "deadline_id": 229,
+      "type": "NACIONAL",
+      "skus": [
+        {
+          "id": 201047,
+          "size": "G",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201046,
+          "size": "GG",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201045,
+          "size": "M",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201044,
+          "size": "P",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 12,
+      "colors": [],
+      "images": [
+        {
+          "id": 113751,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738679237480.jpg"
+        },
+        {
+          "id": 113752,
+          "order": 2,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738679267832.jpg"
+        },
+        {
+          "id": 113753,
+          "order": 3,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738680056857.jpg"
+        }
+      ]
+    },
+    {
+      "id": 56835,
+      "name": "Jaqueta",
+      "reference": "100BMG92",
+      "gender": "Masculino",
+      "category": "Inverno Masculino",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": "Moletom",
+      "deadline_id": 229,
+      "type": "NACIONAL",
+      "skus": [
+        {
+          "id": 201102,
+          "size": "G",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201101,
+          "size": "GG",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201100,
+          "size": "M",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201099,
+          "size": "P",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 23,
+      "colors": [],
+      "images": [
+        {
+          "id": 113799,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738680274076.jpg"
+        },
+        {
+          "id": 113800,
+          "order": 2,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738680314395.jpg"
+        },
+        {
+          "id": 113801,
+          "order": 3,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738680346714.jpg"
+        }
+      ]
+    },
+    {
+      "id": 56836,
+      "name": "Moletom",
+      "reference": "100BMG93",
+      "gender": "Masculino",
+      "category": "Inverno Masculino",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": "Moletom",
+      "deadline_id": 229,
+      "type": "NACIONAL",
+      "skus": [
+        {
+          "id": 201105,
+          "size": "G",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201106,
+          "size": "GG",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201104,
+          "size": "M",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201103,
+          "size": "P",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 23,
+      "colors": [],
+      "images": [
+        {
+          "id": 113802,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738680442015.jpg"
+        },
+        {
+          "id": 113803,
+          "order": 2,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738680473833.jpg"
+        }
+      ]
+    },
+    {
+      "id": 60039,
+      "name": "Jaqueta Bege",
+      "reference": "30.11.25",
+      "gender": null,
+      "category": "Inverno Masculino",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": "<p>Jaqueta Bege Premium</p>",
+      "deadline_id": null,
+      "type": null,
+      "skus": [
+        {
+          "id": 214931,
+          "size": "g",
+          "stock": 20,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 214932,
+          "size": "gg",
+          "stock": 20,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 214930,
+          "size": "m",
+          "stock": 10,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 214929,
+          "size": "p",
+          "stock": 5,
+          "open_grid": false,
+          "min_quantity": 1
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 230,
+      "colors": [],
+      "images": [
+        {
+          "id": 122793,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1740081647435.jpg"
+        },
+        {
+          "id": 122794,
+          "order": 2,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1725652228121.jpg"
+        }
+      ]
+    },
+    {
+      "id": 60040,
+      "name": "Jaqueta Preta",
+      "reference": "10.11.30",
+      "gender": null,
+      "category": "Inverno Masculino",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": "<p>Jaqueta Preta da marca Columbia.</p>",
+      "deadline_id": null,
+      "type": null,
+      "skus": [
+        {
+          "id": 214934,
+          "size": "g",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 214933,
+          "size": "gg",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 214935,
+          "size": "m",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 214936,
+          "size": "p",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 120,
+      "colors": [],
+      "images": [
+        {
+          "id": 122796,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1740081615734.jpg"
+        },
+        {
+          "id": 122797,
+          "order": 2,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1725652231678.jpg"
+        },
+        {
+          "id": 122795,
+          "order": 3,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1725652231680.jpg"
+        }
+      ]
+    },
+    {
+      "id": 56822,
+      "name": "Moletom",
+      "reference": "100BMG79",
+      "gender": "Masculino",
+      "category": "Inverno Masculino",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": "Moletom rosa",
+      "deadline_id": 229,
+      "type": "NACIONAL",
+      "skus": [
+        {
+          "id": 201059,
+          "size": "G",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201058,
+          "size": "GG",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201057,
+          "size": "M",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201056,
+          "size": "P",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 13,
+      "colors": [],
+      "images": [
+        {
+          "id": 113765,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1739468378943.jpg"
+        }
+      ]
+    },
+    {
+      "id": 56824,
+      "name": "Moletom",
+      "reference": "100BMG81",
+      "gender": "Unisex",
+      "category": "Inverno Masculino",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": "Mochila",
+      "deadline_id": 229,
+      "type": "NACIONAL",
+      "skus": [
+        {
+          "id": 201064,
+          "size": "UNICO",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 24,
+      "colors": [],
+      "images": [
+        {
+          "id": 113769,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1739468519599.jpg"
+        },
+        {
+          "id": 113770,
+          "order": 2,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1724352589286.jpg"
+        },
+        {
+          "id": 113771,
+          "order": 3,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1724352589290.jpg"
+        }
+      ]
+    },
+    {
+      "id": 56827,
+      "name": "Moletom",
+      "reference": "100BMG84",
+      "gender": "Masculino",
+      "category": "Inverno Masculino",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": "Jaqueta",
+      "deadline_id": 229,
+      "type": "NACIONAL",
+      "skus": [
+        {
+          "id": 201069,
+          "size": "G",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201070,
+          "size": "GG",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201068,
+          "size": "M",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201067,
+          "size": "P",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 24,
+      "colors": [],
+      "images": [
+        {
+          "id": 113779,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1739468613360.jpg"
+        },
+        {
+          "id": 113780,
+          "order": 2,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1739468658844.jpg"
+        },
+        {
+          "id": 113781,
+          "order": 3,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738679465095.jpg"
+        }
+      ]
+    },
+    {
+      "id": 56829,
+      "name": "Jaqueta",
+      "reference": "100BMG86",
+      "gender": "Masculino",
+      "category": "Inverno Masculino",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": "Jaqueta",
+      "deadline_id": 229,
+      "type": "NACIONAL",
+      "skus": [
+        {
+          "id": 201077,
+          "size": "G",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201078,
+          "size": "GG",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201076,
+          "size": "M",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 201075,
+          "size": "P",
+          "stock": 100,
+          "open_grid": false,
+          "min_quantity": 1
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 23,
+      "colors": [],
+      "images": [
+        {
+          "id": 113785,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738680215635.jpg"
+        },
+        {
+          "id": 113786,
+          "order": 2,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738680246073.jpg"
+        }
+      ]
+    },
+    {
+      "id": 7055,
+      "name": "Bermuda",
+      "reference": "67.15.5431",
+      "gender": "Masculino",
+      "category": "Bermudas",
+      "subcategory": "Lisa",
+      "prompt_delivery": true,
+      "description": null,
+      "deadline_id": null,
+      "type": null,
+      "skus": [
+        {
+          "id": 73264,
+          "size": "G",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 3
+        },
+        {
+          "id": 73261,
+          "size": "GG",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        },
+        {
+          "id": 73263,
+          "size": "M",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 3
+        },
+        {
+          "id": 73262,
+          "size": "P",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 48,
+      "colors": [],
+      "images": [
+        {
+          "id": 34446,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738682817849.jpg"
+        }
+      ]
+    },
+    {
+      "id": 7066,
+      "name": "Bermuda",
+      "reference": "67.15.7671",
+      "gender": "Masculino",
+      "category": "Bermudas",
+      "subcategory": "Estampada",
+      "prompt_delivery": true,
+      "description": null,
+      "deadline_id": null,
+      "type": null,
+      "skus": [
+        {
+          "id": 73311,
+          "size": "G",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 6
+        },
+        {
+          "id": 73312,
+          "size": "GG",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 2
+        },
+        {
+          "id": 73310,
+          "size": "M",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 5
+        },
+        {
+          "id": 73309,
+          "size": "P",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 2
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 37,
+      "colors": [],
+      "images": [
+        {
+          "id": 34408,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738679786977.jpg"
+        }
+      ]
+    },
+    {
+      "id": 7069,
+      "name": "Bermuda",
+      "reference": "67.15.5937",
+      "gender": "Masculino",
+      "category": "Bermudas",
+      "subcategory": "Estampada",
+      "prompt_delivery": true,
+      "description": null,
+      "deadline_id": null,
+      "type": "IMPORTADO",
+      "skus": [
+        {
+          "id": 73323,
+          "size": "G",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        },
+        {
+          "id": 73324,
+          "size": "GG",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        },
+        {
+          "id": 73321,
+          "size": "M",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 5
+        },
+        {
+          "id": 73322,
+          "size": "P",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 33,
+      "colors": [],
+      "images": [
+        {
+          "id": 34409,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738679813411.jpg"
+        }
+      ]
+    },
+    {
+      "id": 7071,
+      "name": "Bermuda",
+      "reference": "67.15.3602",
+      "gender": "Masculino",
+      "category": "Bermudas",
+      "subcategory": "Estampada",
+      "prompt_delivery": true,
+      "description": null,
+      "deadline_id": null,
+      "type": "IMPORTADO",
+      "skus": [
+        {
+          "id": 73334,
+          "size": "G",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        },
+        {
+          "id": 73335,
+          "size": "GG",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 6
+        },
+        {
+          "id": 73333,
+          "size": "M",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 3
+        },
+        {
+          "id": 73332,
+          "size": "P",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 37,
+      "colors": [],
+      "images": [
+        {
+          "id": 34407,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1739547349566.jpg"
+        },
+        {
+          "id": 122940,
+          "order": 2,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738602262527.jpg"
+        }
+      ]
+    },
+    {
+      "id": 60187,
+      "name": "Boné",
+      "reference": "71.31.0000",
+      "gender": "Unissex",
+      "category": "Bone",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": null,
+      "deadline_id": null,
+      "type": null,
+      "skus": [
+        {
+          "id": 215197,
+          "size": "G",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        },
+        {
+          "id": 215198,
+          "size": "GG",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215196,
+          "size": "M",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215195,
+          "size": "P",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 79.99,
+      "colors": [],
+      "images": [
+        {
+          "id": 122949,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1739543068675.jpg"
+        }
+      ]
+    },
+    {
+      "id": 60188,
+      "name": "Boné",
+      "reference": "91.31.0000",
+      "gender": "Unissex",
+      "category": "Bone",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": null,
+      "deadline_id": null,
+      "type": null,
+      "skus": [
+        {
+          "id": 215201,
+          "size": "G",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        },
+        {
+          "id": 215202,
+          "size": "GG",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215200,
+          "size": "M",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215199,
+          "size": "P",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 39.99,
+      "colors": [],
+      "images": [
+        {
+          "id": 122956,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1740076508626.jpg"
+        }
+      ]
+    },
+    {
+      "id": 60190,
+      "name": "Boné",
+      "reference": "11.31.0000",
+      "gender": "Unissex",
+      "category": "Bone",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": null,
+      "deadline_id": null,
+      "type": null,
+      "skus": [
+        {
+          "id": 215207,
+          "size": "G",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        },
+        {
+          "id": 215210,
+          "size": "GG",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215209,
+          "size": "M",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215208,
+          "size": "P",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 59.99,
+      "colors": [],
+      "images": [
+        {
+          "id": 122965,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1739999871315.jpg"
+        }
+      ]
+    },
+    {
+      "id": 60191,
+      "name": "Boné",
+      "reference": "01.31.0000",
+      "gender": "Unissex",
+      "category": "Bone",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": null,
+      "deadline_id": null,
+      "type": null,
+      "skus": [
+        {
+          "id": 215213,
+          "size": "G",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        },
+        {
+          "id": 215214,
+          "size": "GG",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215211,
+          "size": "M",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215212,
+          "size": "P",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 69.99,
+      "colors": [],
+      "images": [
+        {
+          "id": 122960,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1739553483600.jpg"
+        }
+      ]
+    },
+    {
+      "id": 60204,
+      "name": "Camiseta",
+      "reference": "59.31.0000",
+      "gender": "Masculino",
+      "category": "Verão",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": null,
+      "deadline_id": null,
+      "type": null,
+      "skus": [
+        {
+          "id": 215264,
+          "size": "G",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        },
+        {
+          "id": 215266,
+          "size": "GG",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215265,
+          "size": "M",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215263,
+          "size": "P",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 99,
+      "colors": [],
+      "images": [
+        {
+          "id": 122954,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1739552754743.jpg"
+        }
+      ]
+    },
+    {
+      "id": 60205,
+      "name": "Camiseta",
+      "reference": "39.31.0000",
+      "gender": "Masculino",
+      "category": "Verão",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": null,
+      "deadline_id": null,
+      "type": null,
+      "skus": [
+        {
+          "id": 215270,
+          "size": "G",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        },
+        {
+          "id": 215269,
+          "size": "GG",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215268,
+          "size": "M",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215267,
+          "size": "P",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 99,
+      "colors": [],
+      "images": [
+        {
+          "id": 122955,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1739552827206.jpg"
+        }
+      ]
+    },
+    {
+      "id": 60206,
+      "name": "Camiseta",
+      "reference": "19.31.0000",
+      "gender": "Masculino",
+      "category": "Verão",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": null,
+      "deadline_id": null,
+      "type": null,
+      "skus": [
+        {
+          "id": 215272,
+          "size": "G",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        },
+        {
+          "id": 215274,
+          "size": "GG",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215271,
+          "size": "M",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215273,
+          "size": "P",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 99,
+      "colors": [],
+      "images": [
+        {
+          "id": 122957,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1740077595762.jpg"
+        }
+      ]
+    },
+    {
+      "id": 60207,
+      "name": "Camiseta",
+      "reference": "89.31.0000",
+      "gender": "Masculino",
+      "category": "Verão",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": null,
+      "deadline_id": null,
+      "type": null,
+      "skus": [
+        {
+          "id": 215277,
+          "size": "G",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        },
+        {
+          "id": 215278,
+          "size": "GG",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215275,
+          "size": "M",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 215276,
+          "size": "P",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 99,
+      "colors": [],
+      "images": [
+        {
+          "id": 122958,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1739553249081.jpg"
+        }
+      ]
+    },
+    {
+      "id": 56837,
+      "name": "Bota branca",
+      "reference": "100BMG94",
+      "gender": "Masculino",
+      "category": "Bota",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": "Bota",
+      "deadline_id": 229,
+      "type": "NACIONAL",
+      "skus": [
+        {
+          "id": 201107,
+          "size": "36",
+          "stock": 100,
+          "open_grid": true,
+          "min_quantity": 1
+        },
+        {
+          "id": 201108,
+          "size": "37",
+          "stock": 100,
+          "open_grid": true,
+          "min_quantity": 1
+        },
+        {
+          "id": 201109,
+          "size": "38",
+          "stock": 100,
+          "open_grid": true,
+          "min_quantity": 1
+        },
+        {
+          "id": 201110,
+          "size": "39",
+          "stock": 100,
+          "open_grid": true,
+          "min_quantity": 1
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 19,
+      "colors": [],
+      "images": [
+        {
+          "id": 113804,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738682421201.jpg"
+        },
+        {
+          "id": 113805,
+          "order": 2,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738680535229.jpg"
+        }
+      ]
+    },
+    {
+      "id": 56838,
+      "name": "Bota preta",
+      "reference": "100BMG95",
+      "gender": "Masculino",
+      "category": "Bota",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": "Bota",
+      "deadline_id": 229,
+      "type": "NACIONAL",
+      "skus": [
+        {
+          "id": 201113,
+          "size": "36",
+          "stock": 100,
+          "open_grid": true,
+          "min_quantity": 1
+        },
+        {
+          "id": 201114,
+          "size": "37",
+          "stock": 100,
+          "open_grid": true,
+          "min_quantity": 1
+        },
+        {
+          "id": 201111,
+          "size": "38",
+          "stock": 100,
+          "open_grid": true,
+          "min_quantity": 1
+        },
+        {
+          "id": 201112,
+          "size": "39",
+          "stock": 100,
+          "open_grid": true,
+          "min_quantity": 1
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 19,
+      "colors": [],
+      "images": [
+        {
+          "id": 113806,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738682461398.jpg"
+        },
+        {
+          "id": 113807,
+          "order": 2,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/2007-1738680596274.jpg"
+        }
+      ]
+    },
+    {
+      "id": 7048,
+      "name": "Bota",
+      "reference": "67.15.2442",
+      "gender": "Masculino",
+      "category": "Bota",
+      "subcategory": null,
+      "prompt_delivery": true,
+      "description": null,
+      "deadline_id": null,
+      "type": null,
+      "skus": [
+        {
+          "id": 73243,
+          "size": "G",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 1
+        },
+        {
+          "id": 73244,
+          "size": "GG",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        },
+        {
+          "id": 73242,
+          "size": "M",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 4
+        },
+        {
+          "id": 73241,
+          "size": "P",
+          "stock": 500,
+          "open_grid": false,
+          "min_quantity": 5
+        }
+      ],
+      "companies": {
+        "key": 2007
+      },
+      "brand": "Marca Moda",
+      "price": 35,
+      "colors": [],
+      "images": [
+        {
+          "id": 34413,
+          "order": 1,
+          "path": "https://api.forca-de-vendas.integrador.e-catalogos.net/images/2007/301-1714656220303.jpg"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    { "id": "Inverno Feminino" },
+    { "id": "Inverno Masculino" },
+    { "id": "Bermudas" },
+    { "id": "Bone" },
+    { "id": "Verão" },
+    { "id": "Bota" }
+  ]
+}
