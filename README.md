@@ -16,11 +16,11 @@ ESCLARECIDO ISSO, EIS ABAIXO DESSE PARÁGRAFO AS CONDIÇÕES PARA A EXECUÇÃO D
     json-server , disponível no Node Package Manager e seu repostório.
 
 
-    **npx json-server -p 8000 products.json**
+    npx json-server -p 8000 products.json
 
     Como não pude estudar a fundo o Vite, o comando de levantamento pra execução da página foi
     
-    **npm run dev**
+    npm run dev
 
     Sendo esse script executado, completamente detalhado nas dependências dependências do projeto
 
