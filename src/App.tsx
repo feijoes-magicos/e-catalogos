@@ -542,7 +542,7 @@ function App() {
                     )}
                   </div>
                 ))}
-              {packs && (
+              {packs && !packs[cursor].packs[0].open_grid &&  (
                 <>
                   <img src={equal} />
                   <div className="visor">
