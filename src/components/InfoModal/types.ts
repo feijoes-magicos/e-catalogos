@@ -1,12 +1,12 @@
 interface InfoProduto {
-	nomeProduto: string;
-	referencia: string;
-	marca: string;
-	categoria: string;
-	genero: string;
+	name: string;
+	reference: string;
+	brand: string;
+	categories: string;
+	gender: string;
 }
 
 export interface Props {
-	viewabilityHandler: { isOpen: boolean; setOpenStatus: () => void };
+	setOpenStatus: () => void ;
 	info: InfoProduto;
 }

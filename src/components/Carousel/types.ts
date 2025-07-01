@@ -1,16 +1,16 @@
-import { Produto } from "src/RNTypes";
+import { Product } from "src/RNTypes";
 
 type CursorHandler = {
   cursor: number;
   setCursor: (x: number) => void;
 };
-type CursorFotoHandler = {
-  cursorFoto: number;
-  setCursorFoto: (x: number) => void;
+type PhotoCursorHandler = {
+  photoCursor: number;
+  setPhotoCursor: (x: number) => void;
 };
 export interface Props {
-  produtos: Array<Produto>;
-  refCarrossel: React.RefObject<HTMLDivElement | null>;
+  products: Array<Product>;
+  carouselRef: React.RefObject<HTMLDivElement | null>;
   cursorHandler: CursorHandler;
-  cursorFotoHandler: CursorFotoHandler;
-};
+  photoCursorHandler: PhotoCursorHandler;
+}

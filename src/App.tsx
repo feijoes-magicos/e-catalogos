@@ -1,146 +1,138 @@
 import "./App.css";
 
-import { Packs, Produto } from "./RNTypes";
+import { Packs, Product } from "./RNTypes";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
-import Carousel from "./components/Carousel/";
-import ControlPanel from "./components/ControlPanel/";
-import Header from "./components/Header/";
-import InfoModal from "./components/InfoModal/";
-import PackInfo from "./components/PackInfo/";
-import SeekModal from "./components/SeekModal/";
+import Carousel from "./components/Carousel";
+import ControlPanel from "./components/ControlPanel";
+import Header from "./components/Header";
+import InfoModal from "./components/InfoModal";
+import PackInfo from "./components/PackInfo";
+import SeekModal from "./components/SeekModal";
+import PriceControlPanel from "./components/PriceControlPanel/PriceControlPanel";
 
-const ordemTamanhos = ["PP", "P", "M", "G", "GG"];
+const sizeOrder = ["PP", "P", "M", "G", "GG"];
 
-const buscarProdutos = async () => {
-	const dados = await fetch("http://localhost:8000/products");
-	return dados.json();
-};
-
-const esperarBuscarProdutos = async () => {
-	return await buscarProdutos();
+const fetchProducts = async () => {
+  const data = await fetch("http://localhost:8000/products");
+  return data.json();
 };
 
 function App() {
-	const [produtos, setProdutos] = useState<null | Array<Produto>>(null);
+  const [products, setProducts] = useState<Array<Product>>([]);
 
-	const [cursor, setCursor] = useState<number>(0);
-	const [cursorFoto, setCursorFoto] = useState<number>(0);
-	const [skus, setSkus] = useState<number>(0);
-	const [packs, setPacks] = useState<Packs[]>();
+  const [cursor, setCursor] = useState<number>(0);
+  const [photoCursor, setPhotoCursor] = useState<number>(0);
+  const [packs, setPacks] = useState<Packs[]>([]);
 
-	const [packInvertido, setPackInvertido] = useState(false);
+  const [reversedPack, setReversedPack] = useState<boolean>(false);
 
-	const [modalInformacoes, setModalInformacoes] = useState(false);
-	const [modalPesquisa, setModalPesquisa] = useState(false);
+  const [infoModal, setInfoModal] = useState(false);
+  const [seekModal, setSeekModal] = useState(false);
 
-	const [categorias, setCategorias] = useState<Array<string>>();
+  const categories = useMemo(() => {
+    return [...new Set(products.map((product) => product.categories))];
+  }, [products]);
 
-	const refCarrossel = useRef<HTMLDivElement>(null);
+  const carouselRef = useRef<HTMLDivElement>(null);
 
-	useEffect(() => {
-		esperarBuscarProdutos().then((dados) => {
-			if (Array.isArray(dados)) {
-				setProdutos(dados);
-				setPacks(
-					dados
-						.map((produto: Produto) => {
-							const skusPacking = produto.skus.map((skus) => {
-								return { ...skus, quantia: 0 };
-							});
-							return { packs: skusPacking, preco: produto.price };
-						})
-						.map((produtos, indice): Packs => {
-							const packPersonalizado = {
-								packs: produtos.packs.sort(
-									(a, b) =>
-										ordemTamanhos.indexOf(a.size) -
-										ordemTamanhos.indexOf(b.size),
-								),
-								total: 0,
-								id: indice,
-								preco: produtos.preco,
-							};
-							return packPersonalizado;
-						}),
-				);
-				setCategorias([
-					...new Set(
-						dados.map((produto: Produto) => {
-							return produto.category;
-						}),
-					),
-				]);
-			}
-		});
-	}, []);
+  useEffect(() => {
+    fetchProducts().then((data) => {
+      if (Array.isArray(data)) {
+        setProducts(data);
+        setPacks(
+          data
+            .map((product: Product) => {
+              const skusPacking = product.skus.map((skus) => {
+                return { ...skus, quantity: 0 };
+              });
+              return { packs: skusPacking, price: product.price };
+            })
+            .map((products, indice): Packs => {
+              const incrementedPack = {
+                packs: products.packs.sort(
+                  (a, b) =>
+                    sizeOrder.indexOf(a.size) - sizeOrder.indexOf(b.size),
+                ),
+                total: 0,
+                id: indice,
+                price: products.price,
+              };
+              return incrementedPack;
+            }),
+        );
+      }
+    });
+  }, []);
 
-	return (
-		<div className="screen">
-			{produtos && modalPesquisa && (
-				<SeekModal
-					cursorState={(x: number) => {
-						setCursor(x);
-					}}
-					setOpenStatus={() => {
-						setModalPesquisa(!modalPesquisa);
-					}}
-					lista={produtos}
-				/>
-			)}
-			{produtos && modalInformacoes && (
-				<InfoModal
-					info={{
-						genero: produtos[cursor].gender,
-						nomeProduto: produtos[cursor].name,
-						referencia: produtos[cursor].reference,
-						categoria: produtos[cursor].category,
-						marca: produtos[cursor].brand,
-					}}
-					viewabilityHandler={{
-						isOpen: modalInformacoes,
-						setOpenStatus: () => {
-							setModalInformacoes(!modalInformacoes);
-						},
-					}}
-				/>
-			)}
-			{categorias && produtos && (
-				<>
-					<Header
-						categoriaAtual={produtos[cursor].category}
-						produtos={produtos}
-						categorias={categorias}
-						setCursor={setCursor}
-					/>
-					<Carousel
-						refCarrossel={refCarrossel}
-						produtos={produtos}
-						cursorHandler={{ cursor, setCursor }}
-						cursorFotoHandler={{ cursorFoto, setCursorFoto }}
-					/>
-				</>
-			)}
-			{packs && produtos && (
-				<div className="rodape">
-					<ControlPanel
-						produtos={produtos}
-						setCursorFoto={setCursorFoto}
-						cursor={cursor}
-						packInvertidoHandler={{ packInvertido, setPackInvertido }}
-						modalPesquisaHandler={{ modalPesquisa, setModalPesquisa }}
-						modalInformacoesHandler={{ modalInformacoes, setModalInformacoes }}
-					/>
-					<PackInfo
-						skusHandler={{ skus, setSkus }}
-						packsHandler={{ packs, setPacks }}
-						packInvertido={packInvertido}
-						cursor={cursor}
-					/>
-				</div>
-			)}
-		</div>
-	);
+  return (
+    <div className="screen">
+      {products[0] && seekModal && (
+        <SeekModal
+          cursorState={(x: number) => {
+            setCursor(x);
+          }}
+          setOpenStatus={() => {
+            setSeekModal(!seekModal);
+          }}
+          list={products}
+        />
+      )}
+      {products[0] && infoModal && (
+        <InfoModal
+          info={{
+            ...products[cursor],
+          }}
+          setOpenStatus={() => {
+            setInfoModal(!infoModal);
+          }}
+        />
+      )}
+      {categories && products[0] && (
+        <>
+          <Header
+            currentCategory={products[cursor].categories}
+            products={products}
+            categories={categories}
+            setCursor={setCursor}
+          />
+          <Carousel
+            carouselRef={carouselRef}
+            products={products}
+            cursorHandler={{ cursor, setCursor }}
+            photoCursorHandler={{ photoCursor, setPhotoCursor }}
+          />
+        </>
+      )}
+
+      {packs && products[0] && (
+        <div className="rodape">
+          <ControlPanel
+            products={products}
+            setPhotoCursor={setPhotoCursor}
+            cursor={cursor}
+            reversedPackHandler={{ reversedPack, setReversedPack }}
+            seekModalHandler={{ seekModal, setSeekModal }}
+            infoModalHandler={{
+              infoModal,
+              setInfoModal,
+            }}
+          />
+          <div className={reversedPack ? "packInfo" : "packInfo_reversed"}>
+            <PriceControlPanel
+              cursor={cursor}
+              packsHandler={{ packs, setPacks }}
+            />
+            <PackInfo
+              packs={packs}
+              reversedPack={reversedPack}
+              cursor={cursor}
+            />
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
 export default App;

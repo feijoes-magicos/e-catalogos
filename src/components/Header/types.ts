@@ -1,8 +1,8 @@
-import { Produto } from "src/RNTypes";
+import { Product } from "src/RNTypes";
 
 export interface Props {
-  categoriaAtual: string;
-  produtos: Array<Produto>;
-  categorias: Array<string>;
+  currentCategory: string;
+  products: Array<Product>;
+  categories: Array<string>;
   setCursor: (x: number) => void;
 };

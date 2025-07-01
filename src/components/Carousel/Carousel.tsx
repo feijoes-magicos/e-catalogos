@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 import { Props } from "./types";
-import styles from "./carousel.module.css"
+import styles from "./carousel.module.css";
 
 import arrow from "@assets/arrow.svg";
 import imageUndefined from "@assets/image-undefined.png";
@@ -24,14 +24,13 @@ const handleSlide = (
 };
 
 const Carousel = (props: Props) => {
-  const { produtos, refCarrossel } = props;
+  const { products, carouselRef } = props;
   const { cursor, setCursor } = props.cursorHandler;
-  const { cursorFoto, setCursorFoto } = props.cursorFotoHandler;
+  const { photoCursor, setPhotoCursor } = props.photoCursorHandler;
 
   useEffect(() => {
-    if (refCarrossel.current) {
-      refCarrossel.current.scrollLeft =
-        refCarrossel.current.offsetWidth * cursor;
+    if (carouselRef.current) {
+      carouselRef.current.scrollLeft = carouselRef.current.offsetWidth * cursor;
     }
   }, [cursor]);
 
@@ -41,25 +40,25 @@ const Carousel = (props: Props) => {
         className={styles.button}
         style={{ left: 25 }}
         onClick={() => {
-          setCursorFoto(0);
-          handleSlide(refCarrossel, "-");
+          setPhotoCursor(0);
+          handleSlide(carouselRef, "-");
           if (cursor > 0) {
             setCursor(cursor - 1);
           } else {
-            setCursor(produtos.length - 1);
+            setCursor(products.length - 1);
           }
         }}
       >
         <img src={arrow} />
       </div>
-      <div className={styles.display_case} ref={refCarrossel}>
-        {produtos.map((produto, indice) => {
-          const paths = produto.images.map((imagem) => imagem.path);
+      <div className={styles.display_case} ref={carouselRef}>
+        {products.map((product, indice) => {
+          const paths = product.images.map((imagem) => imagem.path);
           return (
-            <div className={styles.item}  key={indice}>
+            <div className={styles.item} key={indice}>
               <img
                 className={styles.display_image}
-                src={paths[cursorFoto]}
+                src={paths[photoCursor]}
                 onError={handleImageError}
                 key={indice}
               />
@@ -71,9 +70,9 @@ const Carousel = (props: Props) => {
         className={`${styles.button} invertido`}
         style={{ right: 25 }}
         onClick={() => {
-          setCursorFoto(0);
-          handleSlide(refCarrossel, "+");
-          if (cursor < produtos?.length - 1) {
+          setPhotoCursor(0);
+          handleSlide(carouselRef, "+");
+          if (cursor < products.length - 1) {
             setCursor(cursor + 1);
           } else {
             setCursor(0);

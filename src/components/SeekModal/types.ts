@@ -1,10 +1,10 @@
 import { Dispatch, SetStateAction } from "react";
-import { Produto } from "src/RNTypes";
+import { Product } from "src/RNTypes";
 
 export interface Props {
 	setOpenStatus: () => void;
 	cursorState: (x: number) => void;
-	lista: Array<Produto>;
+	list: Array<Product>;
 }
 
 export interface SeekerHandler {

@@ -4,28 +4,28 @@ import { Props } from "./types";
 import whiteArrow from "@assets/whiteArrow.png";
 
 const Header = (props: Props) => {
-  const { categoriaAtual, produtos, categorias, setCursor } = props;
-  const indiceCategoriaAtual = categorias.indexOf(categoriaAtual);
+  const { currentCategory, products, categories, setCursor } = props;
+  const currentCategoryIndex = categories.indexOf(currentCategory);
   return (
     <header className={styles.header}>
       <div className={styles.header_container}>
         <div
           className={`${styles.category_button} invertido`}
           onClick={() => {
-            if (produtos && categorias) {
-              if (indiceCategoriaAtual === 0) {
-                for (const [indice, produto] of produtos.entries()) {
-                  if (produto.category == categorias[categorias.length - 1]) {
-                    setCursor(indice);
+            if (products && categories) {
+              if (currentCategoryIndex === 0) {
+                for (const [index, product] of products.entries()) {
+                  if (product.categories == categories[categories.length - 1]) {
+                    setCursor(index);
                     break;
                   }
                 }
               } else {
-                for (const [indice, produto] of produtos.entries()) {
+                for (const [index, product] of products.entries()) {
                   if (
-                    produto.category == categorias[indiceCategoriaAtual - 1]
+                    product.categories == categories[currentCategoryIndex - 1]
                   ) {
-                    setCursor(indice);
+                    setCursor(index);
                     break;
                   }
                 }
@@ -40,21 +40,21 @@ const Header = (props: Props) => {
         </div>
         <div className={styles.category_box}>
           <p style={{ color: "#809caa", fontWeight: "bold" }}>
-            {produtos ? categoriaAtual : "..."}
+            {products ? currentCategory : "..."}
           </p>
         </div>
         <div
           className={styles.category_button}
           onClick={() => {
-            if (produtos && categorias) {
-              if (indiceCategoriaAtual === categorias.length - 1) {
+            if (products && categories) {
+              if (currentCategoryIndex === categories.length - 1) {
                 setCursor(0);
               } else {
-                for (const [indice, produto] of produtos.entries()) {
+                for (const [index, product] of products.entries()) {
                   if (
-                    produto.category == categorias[indiceCategoriaAtual + 1]
+                    product.categories == categories[currentCategoryIndex + 1]
                   ) {
-                    setCursor(indice);
+                    setCursor(index);
                     break;
                   }
                 }

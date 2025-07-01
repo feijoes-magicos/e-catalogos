@@ -1,38 +1,3 @@
-.packInfo {
-	height: 50%;
-	display: flex;
-	flex-direction: column;
-}
-
-.packInfo_reversed {
-	height: 50%;
-	display: flex;
-	flex-direction: column-reverse;
-	position: relative;
-}
-
-.packPrice_container {
-	background-color: white;
-	display: flex;
-	justify-content: center;
-
-	height: 50%;
-
-	gap: 3%;
-}
-.tab {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.icon {
-	height: fit-content;
-	align-self: center;
-	justify-content: center;
-}
-
 .bottom_container {
 	display: flex;
 	justify-content: center;

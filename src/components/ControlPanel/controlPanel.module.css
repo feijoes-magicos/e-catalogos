@@ -20,9 +20,19 @@
 	margin-bottom: 5px;
 }
 
+.second_row {
+	display: flex;
+	height: fit-content;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5px;
+}
+
 .icon {
 	height: 40px;
 }
+
 .icon_inner_img {
 	height: 100%;
 	aspect-ratio: inherit;

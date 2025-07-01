@@ -8,7 +8,7 @@ const InfoModal = (props: Props) => {
 			<div
 				className= {styles.modal}
 				onClick={() => {
-					props.viewabilityHandler.setOpenStatus();
+					props.setOpenStatus();
 				}}
 			>
 				<div className={styles.window}>
@@ -22,7 +22,7 @@ const InfoModal = (props: Props) => {
 							href=""
 							onClick={(e) => {
 								e.preventDefault();
-								props.viewabilityHandler.setOpenStatus();
+								props.setOpenStatus();
 							}}
 							style={{ position: "absolute", right: "2%", top: "4%" }}
 						>
@@ -32,12 +32,12 @@ const InfoModal = (props: Props) => {
 					<h3 style={{ fontSize: 14, alignSelf: "center" }}>Cores</h3>
 					<div className={styles.body_infomodal}>
 						<p>
-							Nome do Produto: {props.info ? props.info.nomeProduto : "..."}
+							Nome do Produto: {props.info ? props.info.name : "..."}
 						</p>
-						<p>Referencia: {props.info ? props.info.referencia : "..."}</p>
-						<p>Marca: {props.info ? props.info.marca : "..."}</p>
-						<p>Categoria: {props.info ? props.info.categoria : "..."}</p>
-						<p>Genero: {props.info ? props.info.genero : "..."}</p>
+						<p>Referencia: {props.info ? props.info.reference : "..."}</p>
+						<p>Marca: {props.info ? props.info.reference : "..."}</p>
+						<p>Categoria: {props.info ? props.info.categories : "..."}</p>
+						<p>Genero: {props.info ? props.info.gender : "..."}</p>
 					</div>
 				</div>
 			</div>

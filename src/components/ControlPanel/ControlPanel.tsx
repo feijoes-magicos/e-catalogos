@@ -1,4 +1,4 @@
-import {Props} from "./types"
+import { Props } from "./types";
 
 import styles from "./controlPanel.module.css";
 
@@ -6,13 +6,19 @@ import swap from "@assets/swap.png";
 import seek from "@assets/seek.svg";
 import info from "@assets/info.svg";
 import shopCart from "@assets/shopCart.svg";
+import imageUndefined from "@assets/image-undefined.png";
+
+const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+  const target = e.currentTarget;
+  target.onerror = null;
+  target.src = imageUndefined;
+};
 
 const ControlPanel = (props: Props) => {
-  const { produtos, cursor, setCursorFoto } = props;
-  const { modalInformacoes, setModalInformacoes } =
-    props.modalInformacoesHandler;
-  const { modalPesquisa, setModalPesquisa } = props.modalPesquisaHandler;
-  const { packInvertido, setPackInvertido } = props.packInvertidoHandler;
+  const { products, cursor, setPhotoCursor } = props;
+  const { infoModal, setInfoModal } = props.infoModalHandler;
+  const {seekModal, setSeekModal} = props.seekModalHandler;
+  const { reversedPack, setReversedPack } = props.reversedPackHandler;
   return (
     <div className={styles.control_container}>
       <div className={styles.first_row}>
@@ -20,7 +26,7 @@ const ControlPanel = (props: Props) => {
           href=""
           onClick={(e) => {
             e.preventDefault();
-            setModalInformacoes(!modalInformacoes);
+            setInfoModal(!infoModal);
           }}
         >
           <div className={styles.icon}>
@@ -31,7 +37,7 @@ const ControlPanel = (props: Props) => {
           href=""
           onClick={(e) => {
             e.preventDefault();
-            setModalPesquisa(!modalPesquisa);
+            setSeekModal(!seekModal);
           }}
         >
           <div className={styles.icon}>
@@ -40,14 +46,14 @@ const ControlPanel = (props: Props) => {
         </a>
 
         <div className={styles.pic_display}>
-          {produtos
-            ? produtos[cursor].images.map((image) => {
+          {products
+            ? products[cursor].images.map((image) => {
                 return (
                   <a
                     href=""
                     onClick={(e) => {
                       e.preventDefault();
-                      setCursorFoto(image.order - 1);
+                      setPhotoCursor(image.order - 1);
                     }}
                     key={image.id}
                   >
@@ -58,6 +64,7 @@ const ControlPanel = (props: Props) => {
                       <img
                         src={image.path}
                         style={{ height: "100%", aspectRatio: "inherit" }}
+                        onError={handleImageError}
                       />
                     </div>
                   </a>
@@ -76,20 +83,11 @@ const ControlPanel = (props: Props) => {
       </div>
       <p style={{ color: "#888888", fontSize: 10 }}>preços ilustrativos</p>
       <hr style={{ width: "90%", color: "#CCD0CF" }} />
-      <div
-        style={{
-          display: "flex",
-          height: "fit-content",
-          gap: 20,
-          justifyContent: "center",
-          alignItems: "center",
-          marginTop: 5,
-        }}
-      >
+      <div className={styles.second_row}>
         <div
           id={styles.sweep}
           onClick={() => {
-            setPackInvertido(!packInvertido);
+            setReversedPack(!reversedPack);
           }}
         >
           <img src={swap} className={styles.icon_inner_img} />
@@ -97,13 +95,13 @@ const ControlPanel = (props: Props) => {
         <p style={{ color: "#809caa" }}>
           Ref:{" "}
           <span style={{ color: "black" }}>
-            {produtos ? produtos[cursor].reference : "..."}
+            {products ? products[cursor].reference : "..."}
           </span>
         </p>
         <p style={{ color: "#809caa" }}>
           R$:{" "}
           <span style={{ color: "black" }}>
-            {produtos ? produtos[cursor].price.toFixed(2) : "..."}
+            {products ? products[cursor].skus[0].price : "..."}
           </span>
         </p>
       </div>
