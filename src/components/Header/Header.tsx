@@ -2,6 +2,7 @@ import styles from "./header.module.css";
 import { CategoryChangeHandler, Props } from "./types";
 
 import whiteArrow from "@assets/whiteArrow.png";
+import backwardButton from "@assets/backwards.png";
 
 const handleCategoryChangeByVector = (params: CategoryChangeHandler) => {
 	if (
@@ -39,6 +40,12 @@ const Header = (props: Props) => {
 	return (
 		<header className={styles.header}>
 			<div className={styles.header_container}>
+				<div className={`${styles.category_button}`}>
+					<img
+						src={backwardButton}
+						style={{ aspectRatio: "inherit", height: "50%" }}
+					/>
+				</div>
 				<div
 					className={`${styles.category_button} invertido`}
 					onClick={() => {
@@ -74,6 +81,20 @@ const Header = (props: Props) => {
 						style={{ aspectRatio: "inherit", height: "50%" }}
 					/>
 				</div>
+				<span
+					className={styles.category_button}
+					style={{
+						color: "#809caa",
+						backgroundColor: "white",
+						aspectRatio: 1,
+						borderRadius: "50%",
+						width: 25,
+						height: 25,
+						alignSelf: "center",
+					}}
+				>
+					F
+				</span>
 			</div>
 		</header>
 	);
