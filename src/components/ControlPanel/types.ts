@@ -19,7 +19,7 @@ type ReversedPackHandler = {
 export interface Props {
   cursor: number;
   products: Array<Product>;
-  setPhotoCursor: (x: number) => void;
+  setPhotoCursor: Dispatch<SetStateAction<number>>;
   reversedPackHandler: ReversedPackHandler;
   seekModalHandler: SeekModalHandler;
   infoModalHandler: InfoModalHandler;
