@@ -21,7 +21,7 @@ const fetchProducts = async () => {
   return data.json();
 };
 
-function App() {
+const App = () => {
   const [maybeProducts, setMaybeProducts] = useState<Array<Product> | Error>(
     [],
   );
@@ -166,5 +166,5 @@ function App() {
       )}
     </div>
   );
-}
+};
 export default App;
