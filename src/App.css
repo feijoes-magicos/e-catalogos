@@ -7,18 +7,19 @@
 
 html,
 body {
-	height: 100vh;
+	height: 100dvh;
 	overflow: hidden;
 }
 
-body {
-	display: grid;
-	place-items: center;
+.screen > * {
+	width: 100%;
 }
 
 .screen {
-	width: 500px;
-	height: 100vh;
+	max-width: 500px;
+	width: 100%;
+	height: 100dvh;
+	margin: auto;
 
 	display: flex;
 	flex-direction: column;

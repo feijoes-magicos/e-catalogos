@@ -18,9 +18,8 @@ const handleSlide = (
 };
 
 const Carousel = (props: Props) => {
-	const { products, carouselRef } = props;
+	const { products, carouselRef, photoCursor } = props;
 	const { cursor, setCursor } = props.cursorHandler;
-	const { photoCursor, setPhotoCursor } = props.photoCursorHandler;
 
 	useEffect(() => {
 		if (carouselRef.current) {
@@ -34,7 +33,6 @@ const Carousel = (props: Props) => {
 				className={styles.button}
 				style={{ left: 25 }}
 				onClick={() => {
-					setPhotoCursor(0);
 					handleSlide(carouselRef, "-");
 					if (cursor > 0) {
 						setCursor(cursor - 1);
@@ -53,7 +51,6 @@ const Carousel = (props: Props) => {
 				className={`${styles.button} invertido`}
 				style={{ right: 25 }}
 				onClick={() => {
-					setPhotoCursor(0);
 					handleSlide(carouselRef, "+");
 					if (cursor < products.length - 1) {
 						setCursor(cursor + 1);
