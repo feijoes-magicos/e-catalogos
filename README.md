@@ -9,7 +9,7 @@ ambas incluidas nas dependências.
 
 Para fazer usos do sistema é necessário executar o seguinte script
 
-    npx json-server <local> --port <number>
+    npx json-server <local> --port <number> --host 0.0.0.0
 
 onde local representa o caminho para o arquivo products.json e number a porta de aplicação escolhida com ambiente de execução
 
@@ -21,4 +21,4 @@ EXECUÇÃO
 
 após configurar corretamente as dependências, rode o comando:
 
-    npm run dev
+    npm run dev -- --host
