@@ -9,8 +9,7 @@ export interface Model {
 	stock: number;
 	open_grid: boolean;
 	minQuantity: number;
-	quantity: number;
-	price: number;
+	price: string;
 }
 
 export interface Packs {
