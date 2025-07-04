@@ -1,19 +1,17 @@
 import React, { useEffect } from "react";
 
-import { Props } from "./types";
-import styles from "./carousel.module.css";
+import { CursorHandler, Props } from "./types";
+import { Button, CarouselContainer, DisplayCase } from "./Carousel.styles";
 
 import arrow from "@assets/arrow.svg";
 import CarouselImages from "./subcomponents/CarouselImages";
 
 const handleSlide = (
 	ref: React.RefObject<HTMLDivElement | null>,
-	operation: "+" | "-",
+	cursorHandler: CursorHandler,
 ) => {
 	if (ref.current) {
-		operation === "+"
-			? (ref.current.scrollLeft += ref.current.offsetWidth)
-			: (ref.current.scrollLeft -= ref.current.offsetWidth);
+		ref.current.scrollLeft = ref.current.offsetWidth * cursorHandler.cursor;
 	}
 };
 
@@ -28,12 +26,11 @@ const Carousel = (props: Props) => {
 	}, [cursor]);
 
 	return (
-		<div className={styles.carousel}>
-			<div
-				className={styles.button}
-				style={{ left: 25 }}
+		<CarouselContainer>
+			<Button
+				$side="left"
 				onClick={() => {
-					handleSlide(carouselRef, "-");
+					handleSlide(carouselRef, props.cursorHandler);
 					if (cursor > 0) {
 						setCursor(cursor - 1);
 					} else {
@@ -42,16 +39,15 @@ const Carousel = (props: Props) => {
 				}}
 			>
 				<img src={arrow} />
-			</div>
-			<div className={styles.display_case} ref={carouselRef}>
+			</Button>
+			<DisplayCase ref={carouselRef}>
 				<CarouselImages photoCursor={photoCursor} products={products} />
 				);
-			</div>
-			<div
-				className={`${styles.button} invertido`}
-				style={{ right: 25 }}
+			</DisplayCase>
+			<Button
+				$side="right"
 				onClick={() => {
-					handleSlide(carouselRef, "+");
+					handleSlide(carouselRef, props.cursorHandler);
 					if (cursor < products.length - 1) {
 						setCursor(cursor + 1);
 					} else {
@@ -60,8 +56,8 @@ const Carousel = (props: Props) => {
 				}}
 			>
 				<img src={arrow} />
-			</div>
-		</div>
+			</Button>
+		</CarouselContainer>
 	);
 };
 

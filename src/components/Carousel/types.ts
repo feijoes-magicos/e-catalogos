@@ -1,6 +1,6 @@
 import { Product } from "src/RNTypes";
 
-type CursorHandler = {
+export type CursorHandler = {
   cursor: number;
   setCursor: (x: number) => void;
 };

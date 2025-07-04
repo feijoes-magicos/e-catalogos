@@ -11,49 +11,8 @@ body {
 	overflow: hidden;
 }
 
-.screen > * {
-	width: 100%;
-}
 
-.screen {
-	max-width: 500px;
-	width: 100%;
-	height: 100dvh;
-	margin: auto;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-	border: 1px solid black;
-	background-color: white;
-	position: relative;
-}
-
-.rodape {
-	background-color: #809caa;
-	display: flex;
-	flex-direction: column;
-	align-items: stretch;
-	justify-content: center;
-
-	height: 40%;
-	width: 100%;
-}
 
 .invertido {
 	transform: scaleX(-1);
 }
-.packInfo {
-	height: 50%;
-	display: flex;
-	flex-direction: column-reverse;
-}
-
-.packInfo_reversed {
-	height: 50%;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-}
-

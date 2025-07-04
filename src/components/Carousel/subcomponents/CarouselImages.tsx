@@ -1,11 +1,11 @@
 import { Product } from "src/RNTypes";
-import styles from "../carousel.module.css";
 
 import imageUndefined from "@assets/image-undefined.png";
+import { ImageDisplay, Item } from "../Carousel.styles";
 
 type Props = {
 	photoCursor: number;
-	products: Array<Product>
+	products: Array<Product>;
 };
 
 const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
@@ -21,13 +21,12 @@ const CarouselImages = (props: Props) => {
 			{products.map((product, index) => {
 				const paths = product.images.map((imagem) => imagem.path);
 				return (
-					<div className={styles.item} key={index}>
-						<img
-							className={styles.display_image}
+					<Item key={index}>
+						<ImageDisplay
 							src={paths[photoCursor]}
 							onError={handleImageError}
 						/>
-					</div>
+					</Item>
 				);
 			})}
 		</>

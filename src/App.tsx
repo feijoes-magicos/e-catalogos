@@ -1,4 +1,5 @@
 import "./App.css";
+import { Screen, Footer, PackDisplay } from "./App.styles";
 import { Packs, Product } from "./RNTypes";
 
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -78,26 +79,26 @@ const App = () => {
 
 	if (maybeProducts instanceof Error) {
 		return (
-			<div className="screen" style={{ justifyContent: "center" }}>
+			<Screen>
 				<p style={{ width: "80%", textAlign: "center" }}>
 					Algo deu terrívelmente errado e alguém com toda certeza vai ter muita
 					dor de cabeça com isso :p
 				</p>
 				<h3 style={{ color: "red" }}>{maybeProducts.message}</h3>
-			</div>
+			</Screen>
 		);
 	}
 
 	if ((!maybeProducts[0] || !packs[0]) && !(maybeProducts instanceof Error)) {
 		return (
-			<div className="screen" style={{ justifyContent: "center" }}>
+			<Screen>
 				<p>Carregando...</p>
-			</div>
+			</Screen>
 		);
 	}
 
 	return (
-		<div className="screen">
+		<Screen>
 			{seekModal && (
 				<SeekModal
 					cursorState={setCursor}
@@ -135,7 +136,7 @@ const App = () => {
 			)}
 
 			{packs && (
-				<div className="rodape">
+				<Footer>
 					<ControlPanel
 						products={maybeProducts}
 						setPhotoCursor={setPhotoCursor}
@@ -147,7 +148,7 @@ const App = () => {
 							setInfoModal,
 						}}
 					/>
-					<div className={reversedPack ? "packInfo" : "packInfo_reversed"}>
+					<PackDisplay $reversed={reversedPack}>
 						<PriceControlPanel
 							cursor={cursor}
 							packsHandler={{ packs, setPacks }}
@@ -157,10 +158,10 @@ const App = () => {
 							reversedPack={reversedPack}
 							cursor={cursor}
 						/>
-					</div>
-				</div>
+					</PackDisplay>
+				</Footer>
 			)}
-		</div>
+		</Screen>
 	);
 };
 export default App;

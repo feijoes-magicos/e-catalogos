@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction } from "react";
-import styles from "../controlPanel.module.css";
 
 import imageUndefined from "@assets/image-undefined.png";
+import { MiniPic } from "../ControlPanel.styles";
 
 type Props = {
 	images: Array<{ order: number; id: number; path: string }>;
@@ -27,13 +27,13 @@ const ImageSelector = (props: Props) => {
 						}}
 						key={image.id}
 					>
-						<div className={styles.mini_pic} style={{ width: 40, height: 40 }}>
+						<MiniPic>
 							<img
 								src={image.path}
 								style={{ height: "100%", aspectRatio: "inherit" }}
 								onError={handleImageError}
 							/>
-						</div>
+						</MiniPic>
 					</a>
 				);
 			})}
