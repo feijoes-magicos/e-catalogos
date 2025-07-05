@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
 		margin: 0;
 		padding: 0;
 		color: black;
+		font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 	}
 
 	html,
@@ -13,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
 		overflow: hidden;
 	}
 `;
+
 export const Screen = styled.div`
   max-width: 500px;
   width: 100%;
