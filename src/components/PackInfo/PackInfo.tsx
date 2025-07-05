@@ -1,14 +1,13 @@
 import { Props } from "./types";
-import styles from "./packInfo.module.css";
-
 import equal from "@assets/equal.svg";
 import DisplayAmount from "./subcomponents/DisplayAmount";
+import { BottomContainer, PackBuilder } from "./PackInfo.styles";
 
 const PackInfo = (props: Props) => {
   const { cursor, packs } = props;
   return (
-    <div className={styles.bottom_container}>
-      <div className={styles.pack_builder}>
+    <BottomContainer>
+      <PackBuilder>
         {packs &&
           packs[cursor].packs.map((pack, indice) => (
             <div key={indice} style={{ display: "flex", gap: 20 }}>
@@ -31,8 +30,8 @@ const PackInfo = (props: Props) => {
                   )}
             </div>
           ))}
-      </div>
-    </div>
+      </PackBuilder>
+    </BottomContainer>
   );
 };
 

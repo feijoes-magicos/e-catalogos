@@ -1,5 +1,18 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
+export const GlobalStyle = createGlobalStyle`
+	* {
+		margin: 0;
+		padding: 0;
+		color: black;
+	}
+
+	html,
+	body {
+		height: 100dvh;
+		overflow: hidden;
+	}
+`;
 export const Screen = styled.div`
   max-width: 500px;
   width: 100%;
@@ -30,9 +43,9 @@ export const Footer = styled.div`
   width: 100%;
 `;
 
-export const PackDisplay = styled.div<{$reversed:boolean}>`
-	height: 50%;
-	display: flex;
-	flex-direction: ${props => props.$reversed?"column-reverse":"column"};
-	position: relative;
-`
+export const PackDisplay = styled.div<{ $reversed: boolean }>`
+  height: 50%;
+  display: flex;
+  flex-direction: ${(props) => (props.$reversed ? "column-reverse" : "column")};
+  position: relative;
+`;

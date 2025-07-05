@@ -18,19 +18,23 @@ export const HeaderContainer = styled.header`
   gap: 20px;
 `;
 
-export const Button = styled.div`
+export const Button = styled.div<{ $side?: "left" | "right" }>`
   display: flex;
   align-items: center;
   justify-content: center;
+  ${(props) =>
+    props.$side === "left"
+      ? "transform: scaleX(-1); right:25px"
+      : "left:25px;"}
 `;
 export const FunctionButton = styled(Button)`
-	color: #809caa;
-	background-color: white;
-	aspect-ratio: 1;
-	border-radius: 50px;
-	width: 25px;
-	height: 25px;
-	align-self: center;
+  color: #809caa;
+  background-color: white;
+  aspect-ratio: 1;
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  align-self: center;
 `;
 export const CategoryBox = styled.div`
   width: fit-content;

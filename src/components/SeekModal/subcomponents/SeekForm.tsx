@@ -1,6 +1,6 @@
 import { useState } from "react";
-import styles from "../seekModal.module.css";
 import { SeekerHandler } from "../types";
+import { SeekModalBody } from "../SeekModal.styles";
 
 type Props = {
 	cursorState: (x: number) => void;
@@ -17,7 +17,7 @@ const seekHandler = (params: SeekerHandler) => {
 		if (
 			endereco.ref === refEscrita.value &&
 			(typeof refEscrita.value === "string" &&
-			["<", ">"].some((it) => !refEscrita.value.includes(it)))
+			!(["<", ">"].some((it) => refEscrita.value.includes(it))))
 		) {
 			cursorState(endereco.id);
 			setOpenStatus();
@@ -35,8 +35,7 @@ const SeekForm = (props: Props) => {
 	const [ref, setRef] = useState<string>("");
 
 	return (
-		<form
-			className={styles.seekModal_body}
+		<SeekModalBody
 			onSubmit={(e) => {
 				e.preventDefault();
 				seekHandler({
@@ -79,7 +78,7 @@ const SeekForm = (props: Props) => {
 					backgroundColor: "#809caa",
 				}}
 			/>
-		</form>
+		</SeekModalBody>
 	);
 };
 

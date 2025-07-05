@@ -1,8 +1,8 @@
 import { Props } from "./types";
-import styles from "./seekModal.module.css";
 
 import whiteCross from "@assets/cruz_branca.png";
 import SeekForm from "./subcomponents/SeekForm";
+import { Button, Header, Modal, Window } from "./SeekModal.styles";
 
 const SeekModal = (props: Props) => {
   const { cursorState, list, setOpenStatus } = props;
@@ -11,33 +11,30 @@ const SeekModal = (props: Props) => {
   });
 
   return (
-    <div className={styles.modal}>
-      <div className={styles.window}>
-        <div
-          className={styles.header}
+    <Modal>
+      <Window>
+        <Header
           onBlur={() => {
             setOpenStatus();
           }}
         >
           <h2 style={{ color: "white" }}>Buscar referência</h2>
-          <a
-            href=""
+          <Button
             onClick={(e) => {
               e.preventDefault();
               setOpenStatus();
             }}
-            style={{ position: "absolute", right: "2%", top: "4%" }}
           >
             <img src={whiteCross} />
-          </a>
-        </div>
+          </Button>
+        </Header>
         <SeekForm
           cursorState={cursorState}
           setOpenStatus={setOpenStatus}
           enderecos={enderecos}
         />
-      </div>
-    </div>
+      </Window>
+    </Modal>
   );
 };
 

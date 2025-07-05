@@ -64,7 +64,7 @@ export const MiniPic = styled.div`
 `;
 
 export const Label = styled.p`
-  color: "#809caa";
+  color: #809caa;
 `;
 export const Span = styled.span`
   color: black;

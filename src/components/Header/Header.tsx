@@ -53,6 +53,7 @@ const Header = (props: Props) => {
           />
         </Button>
         <Button
+          $side="left"
           onClick={() => {
             handleCategoryChangeByVector({
               ...props,
@@ -85,7 +86,7 @@ const Header = (props: Props) => {
             style={{ aspectRatio: "inherit", height: "50%" }}
           />
         </Button>
-        <FunctionButton>F</FunctionButton>
+        <FunctionButton as="span">F</FunctionButton>
       </HeaderContainer>
     </HeaderDisplay>
   );
